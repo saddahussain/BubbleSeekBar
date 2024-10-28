@@ -47,8 +47,14 @@ publishing {
                 from(components["release"])
                 groupId = "com.github.saddahussain"
                 artifactId = "bubbleseekbar"
-                version = "1.0.2"
+                version = "1.0.3"
             }
+        }
+    }
+
+    repositories {
+        maven {
+            url = uri("$buildDir/repo")
         }
     }
 }
