@@ -47,7 +47,7 @@ publishing {
                 from(components["release"])
                 groupId = "com.github.saddahussain"
                 artifactId = "bubbleseekbar"
-                version = "1.0.0"
+                version = "1.0.2"
             }
         }
     }
