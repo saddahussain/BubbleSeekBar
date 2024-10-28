@@ -1,0 +1,21 @@
+# jitpack.yml
+jdk:
+  - openjdk11  # or specify the JDK version you want to use
+
+before_install:
+  - echo "Running pre-install steps"
+
+install:
+  - ./gradlew clean  # or mvn clean if using Maven
+
+before_script:
+  - echo "Running pre-build steps"
+
+script:
+  - ./gradlew build  # or mvn install if using Maven
+
+after_success:
+  - echo "Build succeeded"
+
+after_failure:
+  - echo "Build failed"
